@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-viem": "^2.0.0",
+    "@types/chai": "4",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.28",
+    "chai": "4",
+    "hardhat": "^2.22.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "name": "hardhat",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "piotr.preciukbusiness@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.5",
+    "@types/chai-as-promised": "^7.1.8",
+    "hardhat-gas-reporter": "^1.0.8",
+    "hardhat-toolbox-viem": "^1.0.0",
+    "solidity-coverage": "^0.8.11",
+    "viem": "^2.8.10"
+  }
+}
