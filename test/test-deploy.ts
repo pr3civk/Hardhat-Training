@@ -9,7 +9,15 @@ describe("Greeter", function () {
     greeterContract = await greeterContractFactory.deploy(0);
     await greeterContract.waitForDeployment();
   });
+  it("Should return greeting message", async function(){
+    assert.equal(await greeterContract.greet(), "Hello from contract!");
+  })
   it("Should start with number 0", async function () {
     assert.equal(await greeterContract.getNumber(), 0);
   });
+  it("Should set the number to 10", async function () {
+    await greeterContract.setNumber(10);
+    assert.equal(await greeterContract.getNumber(), 10);
+  });
+
 });
