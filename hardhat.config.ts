@@ -1,7 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-ethers";
 import "@nomicfoundation/hardhat-verify";
-import "@nomicfoundation/hardhat-waffle";
+// import "@nomiclabs/hardhat-waffle";
 import "dotenv/config";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
@@ -15,6 +15,7 @@ const COINMARKETCAP_API_KEY: string = process.env.COINMARKETCAP_API_KEY!;
 export const ETHERSCAN_API_KEY: string = process.env.ETHERSCAN_API_KEY!;
 
 const config: HardhatUserConfig = {
+  solidity: "0.8.24",
   networks: {
     sepolia: {
       url: ALCHEMY_SEPOLIA_RPC_URL,
@@ -29,7 +30,6 @@ const config: HardhatUserConfig = {
       url: "http://127.0.0.1:8545",
     },
   },
-  solidity: "0.8.24",
   etherscan: {
     apiKey: {
       sepolia: ETHERSCAN_API_KEY,
